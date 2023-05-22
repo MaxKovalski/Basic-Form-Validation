@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./javascript.js" defer></script>
+</head>
+<div class="center">
+    <div class="container">
+    <h4>עם מי יש לנו הכבוד?</h4> 
+    <p>האדם שעבורו מוגשת הבקשה</p>
+    <form name="formValid" >
+        <div class="firstValid">
+       <div>
+     <input name="name" type="text" placeholder="שם פרטי">
+     <br>
+     <span id="nameError"></span>
+    </div>
+    <div>
+     <input name="last" type="text" placeholder="שם משפחה">
+     <br>
+     <span id="lastError"></span>
+    </div>
+    <div>
+    </div>
+    <div>
+<select  id="idPlaceHolder" name="id">
+    <option  selected="selected" value="ת.ז">ת.ז</option>
+    <option value="דרכון">דרכון</option>
+    <input id="idInput" name="id" type="number" >
+    <br>
+    <span id="tzError"></span>
+</select>
+</div>
+</div>
+<p>שפה נוספת לדוח PDF ריכוז נתונים פנסיונים לחוסך <select name="lang" >
+    <option  value="ערבית" >ערבית</option>
+    <option selected="selected" value="עברית">ללא</option>
+</select>
+<select name="israel" disabled>
+    <option value="israel">israel</option>
+</select></p>
+<p><input type="checkbox">אני אפוטרופוס וברצוני להירשם בשם האדם שנמצא תחת האפוטרופוסות שלי</p>
+<button onclick="formValidation()" type="button">שלח</button>
+    </form>
+</div>
+</div>
+</body>
+</html>
+
+
+
