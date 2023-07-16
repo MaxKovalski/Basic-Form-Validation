@@ -1,71 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-body{
-    font-family: 'Heebo', sans-serif;
-    background-color:#d9eafc;
+body {
+  font-family: "Heebo", sans-serif;
+  background-color: #d9eafc;
 }
-h4{
-    font-size: 30px;
-    
+h4 {
+  font-size: 30px;
 }
-p{
-    font-size: 25px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    display: flex;
+p {
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  display: flex;
 }
-input{
-    font-size: 20px;
-margin-left: 20px;
-border: none;
-outline: none;
-border-bottom: 1px solid #000;
-background-color: #eeee;
+input {
+  font-size: 20px;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  background-color: #eeee;
 }
-select{
-    font-size: 20px;
-    margin-left: 20px;
-    margin-right: 10px;
-    background-color: #eeee;
-    border-radius: 10px;
+select {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+  background-color: #eeee;
+  border-radius: 10px;
 }
-button{
-    font-size: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 15px;
-    transition: 0.2s;
+button {
+  font-size: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  transition: 0.2s;
+  cursor: pointer;
 }
-button:hover{
-    background-color: black;
-    color: white;
+button:hover {
+  background-color: black;
+  color: white;
 }
-.center{
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+.center {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.container{
-    
-    background-color: #eeee;
-    border-radius: 20px;
+.container {
+  background-color: #eeee;
+  border-radius: 20px;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   box-shadow: 9px 13px 59px 1px #000000;
 }
-.firstValid{
-    display: flex;
+.firstValid {
+  display: flex;
 }
-span{
-    color: red;
+span {
+  color: red;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: auto;
+  }
+  .firstValid {
+    display: flex;
+    flex-direction: column;
+  }
+  .firstValid input {
+    margin-bottom: 20px;
+  }
+  p {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-bottom: 10px;
+  }
+  select {
+    margin-bottom: 30px;
+  }
+  .id-pass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: auto;
+  }
 }
